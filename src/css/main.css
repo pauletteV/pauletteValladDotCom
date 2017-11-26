@@ -1,0 +1,86 @@
+/** override any bootstrap defaults here **/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/***** main styles ****/
+body {
+  -webkit-font-smoothing: antialiased; }
+
+#mobile-header #logo {
+  padding-top: 5px; }
+
+#mobile-header h1, #mobile-header h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 0px;
+  color: #5A5A5A; }
+
+#mobile-header h3 {
+  font-size: 18px; }
+
+#mobile-header .mobile-nav a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#mobile-header #work-link {
+  background-color: #8BB42D; }
+
+#mobile-header #contact-link {
+  background-color: #BFDA80; }
+
+#mobile-header #about-link {
+  background-color: #CAE288; }
+
+.section-title {
+  border-bottom: 2px solid #1E796A; }
+  .section-title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #5A5A5A; }
+
+#resume-download a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #5A5A5A;
+  text-decoration: none;
+  font-style: italic; }
+
+#resume-download a:hover {
+  color: #000000; }
+
+#work {
+  margin-top: 30px; }
+
+.work-sub-title {
+  margin-top: 12px; }
+  .work-sub-title h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #1E796A; }
+
+.project-details {
+  background-color: #1E796A;
+  padding-left: 5px;
+  color: #FFFFFF; }
+  .project-details h4 {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: .25rem; }
+  .project-details h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic; }
+  .project-details p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px; }
