@@ -56,12 +56,17 @@ body{
 
 	h2 {
 		font-family: $roboto;
-		font-weight: $light-weight;
+		font-weight: $normal-weight;
 		font-size: 28px;
 		margin-bottom: 0px;
-		color: $ninetyBlack;
+		color: $teal;
 	}
 
+}
+
+.divider-border{
+	border-bottom: 1px solid $teal;
+	margin-top: 20px;
 }
 
 #resume-download a{
@@ -83,7 +88,7 @@ body{
 
 .work-sub-title {
 
-	margin-top:12px;
+	margin-top:20px;
 
 	h3 {
 	font-family: $roboto;
@@ -120,4 +125,21 @@ body{
 		font-weight: $normal-weight;
 		font-size: 14px;
 	}
+}
+
+
+#footer {
+	
+	background-color: $green;
+	background-image: url('../images/pattern.png');
+	border-top: 2px solid $teal;
+	font-family: $roboto;
+	font-size: 10px;
+	color: $white;
+
+
+	#copywrite{
+		margin-top: 40px;
+	}
+
 }

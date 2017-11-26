@@ -9,6 +9,7 @@ var htmlSrc = ['src/index.html'],
 	sassSrc = ['sass/main.scss'],
 	imageSrc = ['src/images/*.{png, jpg}']
 	fontsSrc = ['fonts/*.*'];
+	asssetSrc = ['banners'];
 
 
 gulp.task('sass', function(){
@@ -44,10 +45,16 @@ gulp.task('copyFonts', function(){
 
 });
 
+gulp.task('copyAssets', function(){
+	return gulp.src(asssetSrc)
+	.pipe(gulp.dest('dist/banners'));
+
+});
+
 gulp.task('watch', function(){
 	gulp.watch(sassSrc, ['sass']);
 });
 
-gulp.task('build', ['sass', 'html', 'images', 'copySass', 'copyFonts']);
+gulp.task('build', ['sass', 'html', 'images', 'copySass', 'copyFonts', 'copyAssets']);
 
 //gulp.task('default', [ 'sass', 'html', 'images']);
