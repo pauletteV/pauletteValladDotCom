@@ -48,6 +48,18 @@ body {
   border-bottom: 1px solid #1E796A;
   margin-top: 20px; }
 
+.top-link {
+  color: #1E796A; }
+  .top-link a {
+    text-decoration: none;
+    display: block; }
+  .top-link i {
+    color: #1E796A; }
+  .top-link span {
+    margin-left: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
+
 #resume-download a {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -88,6 +100,16 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px; }
+
+#about-copy p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 25px;
+  color: #5A5A5A; }
+
+#about-copy p:last-child {
+  margin-top: 0px; }
 
 #footer {
   background-color: #8BB42D;
