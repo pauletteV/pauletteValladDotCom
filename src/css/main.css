@@ -35,6 +35,44 @@ body {
 #mobile-header #about-link {
   background-color: #CAE288; }
 
+#reg-header {
+  border-bottom: 2px solid #1E796A; }
+  #reg-header #logo {
+    padding-top: 5px; }
+  #reg-header h1, #reg-header h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: #5A5A5A; }
+  #reg-header h3 {
+    font-size: 18px; }
+  #reg-header #reg-nav a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #1E796A;
+    text-decoration: none;
+    font-size: 20px; }
+  #reg-header .reg-nav-divder {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: #1E796A; }
+  #reg-header #reg-nav a:hover {
+    color: #8BB42D; }
+
+#quote {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #1E796A;
+  margin-top: 20px; }
+  #quote footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    color: #1E796A; }
+
 .section-title {
   border-bottom: 2px solid #1E796A; }
   .section-title h2 {
@@ -45,7 +83,7 @@ body {
     color: #1E796A; }
 
 .divider-border {
-  border-bottom: 1px solid #1E796A;
+  border-bottom: 1px solid #8BB42D;
   margin-top: 20px; }
 
 .top-link {
@@ -69,9 +107,6 @@ body {
 
 #resume-download a:hover {
   color: #000000; }
-
-#work {
-  margin-top: 30px; }
 
 .work-sub-title {
   margin-top: 20px; }

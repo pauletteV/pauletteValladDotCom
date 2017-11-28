@@ -20,7 +20,7 @@
   <body>
   
   <!-- mobile header -->
-  <div id="mobile-header" class="container-fluid d-sm-none">  
+  <div id="mobile-header" class="container-fluid d-sm-block d-md-none d-lg-none d-xl-none">  
       <div class="row" id="logo-section">
         <div class="col-3">
             <div id="logo">
@@ -56,11 +56,51 @@
 
    
   <!-- tablet and desktop header & nav here -->
+  <div id="reg-header" class="container-fluid d-none d-md-block d-lg-block d-xl-block">  
+      <div class="row" id="logo-section">
+        <div class="col-2">
+            <div id="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.9 680.5"><style type="text/css">  
+                .st0{fill:#8BB42D;}
+                .st1{fill:#1E796A;}
+                </style><path class="st0" d="M442.3 672.7l76.9-174.3L683.4 2h143.7L586.9 672.7H442.3z"/><path class="st1" d="M379.5 672.7v-253h-88.3c-61.3 0-108.1-3.2-140.4-9.6 -23.8-5.2-47.2-15.8-70.2-31.8 -23-16-42-38-57-66.1C8.6 284.1 1.1 249.5 1.1 208.3c0-53.4 13-96.9 38.9-130.6C65.9 44 98.1 22.1 136.5 12.1c25-6.7 78.7-10.1 161-10.1h217.3v670.7H379.5zM314 115.5c-48.8 0-81.3 1.5-97.4 4.6 -22 4-40.1 13.9-54.4 29.7 -14.3 15.9-21.5 36-21.5 60.4 0 19.8 5.1 37.2 15.3 52.2 10.2 14.9 24.3 25.9 42.3 32.9 18 7 53.7 10.5 107.1 10.5h74.1V115.5H314z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="col-9">
+            <div id="reg-header-titles">
+              <h1 id="title">PAULETTE VALLAD</h1>
+              <h3 id="desc">CREATIVE DEVELOPER</h3>
+            </div>
+        </div>
+      </div><!-- end of logo-section -->
+
+      <div class="row" id="reg-nav">
+        <div class="col-12">
+          <div class="float-right" id="nav-container">
+            <a href="#work">WORK</a>
+            <span class="reg-nav-divder">|</span>
+            <a href="#contact">CONTACT</a> 
+            <span class="reg-nav-divder">|</span>
+            <a href="#about">ABOUT</a>
+           </div> 
+        </div>
+      </div>  
+  </div><!-- end of reg-header container -->
+
+  <div class="row" id="quote">
+      <div class="col-12">
+        <blockquote class="blockquote blockquote text-center">
+          <p>"We are what we repeatedly do. Excellence, then, is not an act, but a habit.”</p>
+          <footer class="blockquote-footer">Aristotle</footer>
+        </blockquote>
+      </div>
+  </div>
 
   <!-- work section -->
   <div id="work" class="container-fluid">
     <div class="row">
-      <div class="col-9">
+      <div class="col-6">
         <div class="section-title"><h2>MY WORK</h2></div>
       </div>
     </div>
@@ -360,7 +400,7 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-4"></div>
-      <div class="col-4 text-center top-link"><a href=#logo-section><i class="fa fa-chevron-up" aria-hidden="true"><span clas="top-link-text">UP</span></i></a></div>
+      <div class="col-4 text-center top-link"><a href="#quote"><i class="fa fa-chevron-up" aria-hidden="true"><span clas="top-link-text">UP</span></i></a></div>
        <div class="col-4"></div>
     </div>
 </div><!-- end of top anchor -->
@@ -368,7 +408,7 @@
 
 <div id="contact" class="container-fluid">
     <div class="row">
-      <div class="col-9">
+      <div class="col-6">
         <div class="section-title"><h2>CONTACT</h2></div>
       </div>
     </div>
@@ -377,14 +417,14 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col-4"></div>
-      <div class="col-4 text-center top-link"><a href=#logo-section><i class="fa fa-chevron-up" aria-hidden="true"><span clas="top-link-text">UP</span></i></a></div>
+      <div class="col-4 text-center top-link"><a href="#quote"><i class="fa fa-chevron-up" aria-hidden="true"><span clas="top-link-text">UP</span></i></a></div>
        <div class="col-4"></div>
     </div>
 </div><!-- end of top anchor -->
 
 <div id="about" class="container-fluid">
      <div class="row">
-      <div class="col-9"> 
+      <div class="col-6"> 
         <div class="section-title"><h2>ABOUT</h2></div></div>
     </div>
     <div class="row">

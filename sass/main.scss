@@ -51,6 +51,62 @@ body{
 
 }
 
+#reg-header{
+	border-bottom: 2px solid $teal; 
+
+	#logo{
+		padding-top: 5px;
+	}
+
+	h1, h3{
+		font-family: $roboto;
+		font-weight: $light-weight;
+		font-size: 30px;
+		margin-bottom: 0px;
+		color: $ninetyBlack;
+	}
+	h3{
+		font-size: 18px;
+	}
+
+	#reg-nav a{
+		font-family: $roboto;
+		font-weight: $light-weight;
+		color: $teal;
+		text-decoration: none;
+		font-size: 20px;
+	}
+
+	.reg-nav-divder{
+		font-family: $roboto;
+		font-size: 22px;
+		color: $teal;
+
+	}
+
+	#reg-nav a:hover{
+		color: $green;
+	}
+	
+}
+
+
+#quote {
+	font-family: $roboto;
+	font-weight: $light-weight;
+	font-size: 22px;
+	color: $teal;
+	margin-top: 20px;
+
+	footer {
+		font-family: $roboto;
+		font-weight: $bold-weight;
+		font-size: 18px;
+		font-style: italic;
+		color: $teal;
+	}
+}
+
 .section-title {
 	border-bottom: 2px solid $teal;	
 
@@ -65,7 +121,7 @@ body{
 }
 
 .divider-border{
-	border-bottom: 1px solid $teal;
+	border-bottom: 1px solid $green;
 	margin-top: 20px;
 }
 
@@ -101,10 +157,6 @@ body{
 		color: $black;
 }
 
-#work {
-	margin-top: 30px;
-		
-}
 
 .work-sub-title {
 
