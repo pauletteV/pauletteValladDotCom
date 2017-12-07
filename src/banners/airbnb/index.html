@@ -1,0 +1,193 @@
+<DOCTYPE! HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Airbnb for Work Business Lounge</title>
+		<style type="text/css">
+			body {
+				margin:0;
+				padding:0;
+				background-color: black;
+			}
+
+			#container {
+				position: relative;
+				width: 300px;
+				height: 250px;
+				box-sizing: border-box;
+				background-color: #000;
+				border: 1px solid #000;
+				overflow: hidden;
+				margin: 25% auto;
+			}
+
+			#preload{
+				position:absolute;
+				left:2000px;
+			}
+
+			#mainAnimation {
+				position: absolute;
+				width: 300px;
+				height: 250px;
+				top: 0px;
+				left: 0px;
+				display: block;
+
+			}
+
+			#bg {
+				position: absolute;
+				width: 330px;
+				height: 275px;
+				top: -12px;
+				left: -16px;
+				background: url('bkg.jpg');
+				display: block;
+				-ms-transform: scale(0.9); 
+			    -webkit-transform: scale(0.9); 
+			    transform: scale(0.9);
+			}
+
+			#endFrame {
+				position: absolute;
+				width: 300px;
+				height: 250px;
+				background:rgba(0,0,0,0.35);
+				top: 0px;
+				left: 0px;
+				display: none;
+				opacity: 0;
+			}
+
+			#bgClick {
+				background: rgba(0,0,0,0.001);
+				position:absolute;
+				top: 0px;
+				left: 0px;
+				width: 300px;
+				height: 250px;
+				cursor: pointer;
+			}
+
+			.ImgSheet {
+				position: absolute;
+				background: url(assets.png) no-repeat 0px 0px;
+			}
+
+			#logo {
+			    background-position: 0px -90px;
+			    width: 41px;
+			    height: 60px;
+			    bottom: 15px;
+			    right: 13px;
+			    opacity: 1;
+			}
+
+			#cta {
+				width: 110px;
+				height: 42px;
+			    top: 180px;
+			    left: 95px;
+				overflow: hidden;
+				cursor: pointer;
+				opacity: 0;
+				display: none;
+			}
+
+			#ctaHover {
+				width: 110px;
+				height: 42px;
+				top: 0px;
+				left: 0px;
+				background-position: 0px -45px;
+				pointer-events: none;
+				opacity: 0;
+			}
+
+			#t1 {
+				position: absolute;
+				background: url(t1.png);
+				width: 300px;
+				height: 250px; 
+				top: 0px;
+				left: 0px;
+				opacity: 0;
+			}
+
+			#t2 {
+				position: absolute;
+				background: url(t2.png);
+				width: 300px;
+				height: 250px; 
+				top: 0px;
+				left: 0px;
+				opacity: 1;
+				display: none;
+			}
+
+		
+		</style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>	
+	</head>
+	
+	<body onload="initBanner();">
+		<div id= "container">
+		<div id="preload">
+			<img src="bkg.jpg">
+			<img src="assets.png">
+		</div>
+			<div id="mainAnimation">
+				<div id="bg"></div>
+				<div id="t1"></div>
+				<div id="endframe"></div>
+				<div id="t2"></div>	
+			</div>
+
+			<div id="logo" class="ImgSheet"></div>		
+			<div id="bgClick"></div>
+			<div id="cta" class="ImgSheet" onmouseover = "ctaOver();" onmouseout ="ctaOut();">
+				<div id="ctaHover" class="ImgSheet"></div>
+			</div>
+		</div>		
+	<script type="text/javascript">
+		var tl  = new TimelineMax();
+		function initBanner() {
+			addListeners();
+			startAnimation(); 
+		 }
+		function addListeners(){
+			cta.addEventListener('click', ctaClick);
+			/*bgClick.addEventListener('click', bkgclick);*/
+		}
+		function startAnimation() {
+			tl.addLabel("text1", "+=1.5");	
+			tl.addLabel("end", "+=7.25");
+
+			tl.to(bg, 2.5, {scale: 1, rotation: 0.01, force3D:false, ease: Power1.easeOut});
+			tl.to(t1, 1, {opacity:1,  ease: Power2.easeOut}, "text1");
+			
+			tl.set(t1, {display: "none"}, "text1+=3");
+			tl.set(t2, {display: "block"}, "text1+=3");
+			
+			tl.set(endframe, {display: "block"}, 'end');
+			tl.set(cta, {display: "block"}, 'end');
+			tl.to(endframe, .5, {opacity:1,  ease: Power2.easeOut}, "end");
+			tl.to(cta, .5, {opacity:1,  ease: Power2.easeOut}, "end");
+
+		}
+		function ctaOver() {
+			TweenLite.to(ctaHover, .25, {opacity: 1}); 
+		}
+		function ctaOut(){
+			TweenLite.set(ctaHover, {opacity: 0}); 
+		}
+		function bkgclick(){
+			//window.open(clickTag, "_blank");
+		}	
+		function ctaClick(){
+			//window.open(clickTag, "_blank");
+		}
+	</script>
+	</body>	
+<html>

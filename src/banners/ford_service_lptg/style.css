@@ -1,0 +1,232 @@
+body {
+	margin: 0;	
+	padding: 0;
+	background-color: black;
+}
+
+#mainContainer {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 250px;
+	border: 1px solid #000;
+	background-color: #000;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 25% auto;
+}
+
+@-moz-document url-prefix() { 
+
+	.unblur{
+		backface-visibility: hidden;    
+		-webkit-filter: blur(0);
+		filter: blur(0);
+	}
+
+}
+
+
+/* ====== banner assets ====== */
+
+#bottomBar {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	height: 28px; 
+	background-color: #FFF;
+	z-index: 300;
+}
+
+
+#fordOval{
+	position: absolute;
+	top: 210px;
+	left: 222px;
+	width: 63px;
+	height: 32px; 
+	background: url(assets.png) no-repeat -10px -10px;
+	z-index: 300;
+}
+
+.sprite{
+	background:url(assets.png) no-repeat;
+	position: absolute;
+}
+
+
+
+/* ====== frame 1 ====== */
+
+#frame1{
+	overflow: hidden;
+	width: 300px;
+	height: 222px;
+	position: absolute;
+	position: absolute;
+	z-index: 2;
+}
+
+#copy1{
+	width: 210px;
+	height: 40px;
+	top: 117px;
+	left: 44px;
+	background-position: -10px -50px;
+	display: none;
+	opacity: 0;
+}
+
+/*#copy2{
+	width: 162px;
+	height: 24px;
+	top: 128px;
+	left: 72px;
+	background-position: -8px -79px;
+	display: none;
+	opacity: 0;
+} */
+
+#rock{
+	/*background: url(frame1.jpg) no-repeat;*/
+	left: -584px;
+	top: -81px;
+	/*width: 300px;*/
+	position: absolute;
+}
+
+/* ============ end frame =================== */
+
+#guide {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 250px; 
+	background: url(guide.jpg) 0 0 no-repeat;
+}
+
+#endFrame {
+	display: none;
+	background: url(bg.jpg) no-repeat;
+	width: 300px;
+	height: 222px;
+	position: absolute;
+	top:0;
+	z-index: 1;
+}
+
+#offerCopy1 { /* "Low Price" */
+	position: absolute;
+	top: 21px;
+	left: 76px;
+	width: 107px;
+	height: 26px; 
+	background: url(assets.png) no-repeat -34px -97px;
+	opacity: 1;
+	display: none;
+}
+
+#offerCopy2 { /* "Tire Guarantee" */
+	position: absolute;
+	top: 50px;
+	left: 52px;
+	width: 197px;
+	height: 32px; 
+	background: url(assets.png) no-repeat -10px -126px;
+	opacity: 1;
+	display: none;
+}
+
+#lineGrow {
+	position: absolute;
+	top: 90px;
+	left: 27px;
+	width: 242px;
+	height: 1px; 
+	background-color: #FFF;
+	opacity: 1;
+	display: none;
+}
+
+#offerDetails1{ /* "13 major" */
+	position: absolute;
+	top: 121px;
+	left: 97px;
+	width: 98px;
+	height: 15px; 
+	background: url(assets.png) no-repeat -10px -189px;
+	opacity: 1;
+	display: none;	
+}
+
+#offerDetails2{ /* "30 day price" */
+	position: absolute;
+	top: 136px;
+	left: 97px;
+	width: 114px;
+	height: 16px; 
+	background: url(assets.png) no-repeat -10px -204px;
+	opacity: 1;
+	display: none;	
+}
+
+#offerDetails3{ /* "all makes" */
+	position: absolute;
+	top: 152px;
+	left: 97px;
+	width: 109px;
+	height: 16px; 
+	background: url(assets.png) no-repeat -10px -220px;
+	opacity: 1;
+	display: none;	
+}
+
+
+#tagline{ /* Why buy tires......*/
+	position: absolute;
+	top: 100px;
+	left: 48px;
+	width: 208px;
+	height: 16px; 
+	background: url(assets.png) no-repeat -10px -169px;
+	opacity: 1;
+	display: none;	
+}
+
+
+/* ======= click outs ======== */
+
+
+#bgClick {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 250px;
+	z-index: 400;
+}
+
+
+#cta {
+	position: absolute;
+	top: 179px;
+	left: 88px;
+	width: 125px;
+	height: 29px;
+	background: url(cta.png) no-repeat 0px 0px;
+	display: none;
+	opacity: 1; 
+	z-index: 500;
+	cursor: pointer;
+
+}
+
+#ctaOver {
+	position: absolute;
+	width: 125px;
+	height: 29px;
+	background: url(ctaOver.png) no-repeat 0px 0px;
+	opacity: 0;  
+}

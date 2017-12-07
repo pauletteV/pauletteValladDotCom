@@ -1,0 +1,240 @@
+body {
+	margin:0;
+	padding:0;
+	background-color: black;
+}
+
+#container {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 250px;
+	background-color: #FFFFFF;
+	border: 1px solid #000;
+	overflow: hidden;
+	margin: 25% auto;
+}
+
+#mainAnimation {
+	display: block;
+	width: 300px;
+	height: 250px;
+	
+
+}
+
+#endFrame {
+	width: 300px;
+	height: 250px;
+	display: none;
+}
+
+#bgClick {
+	position:absolute;
+	top:0;
+	width: 300px;
+	height: 250px;
+	cursor: pointer
+}
+
+#endBgClick {
+	position:absolute;
+	top:0;
+	width: 300px;
+	height: 250px;
+	cursor: pointer
+
+}
+
+
+/* ----- banner assets ------ */
+
+
+.ImgSheet {
+	position: absolute;
+	background: url(Award300x250Sprite.png) no-repeat 0px 0px;
+
+}
+
+#mainBG {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background: url(BG.jpg) no-repeat;
+}
+
+#truck {
+	position: relative;
+	width: 251px;
+	height: 84px;
+	left: 20px;
+	top:160px;
+	display: none;
+}
+
+#truck1 {
+	position:absolute;
+	width: inherit;
+	height:inherit;
+	background: url(truckRed.png) no-repeat;
+}
+
+#frontWheel {
+	position: absolute;
+	width: 40px;
+	height: 39px;
+	top: 46px;
+	left: 20px;
+	background: url(wheel.png) no-repeat;
+}
+
+#backWheel {
+	position: absolute;
+	width: 40px;
+	height: 39px;
+	top: 46px;
+	left: 179px;
+	background: url(wheel.png) no-repeat;
+}
+
+#truck2 {
+	position:absolute;
+	width: inherit;
+	height:inherit;
+	background: url(truckWhite.png) no-repeat;
+	opacity: 0;
+}
+
+#truck3 {
+	position:absolute;
+	width: inherit;
+	height:inherit;
+	background: url(truckBlue.png) no-repeat;
+	opacity: 0;
+}
+
+#copy1 {
+	width: 262px;
+	height: 50px;
+	top: 53px;
+	left: 18px;
+	background-position: -10px -49px;
+	opacity: 0;
+}
+
+#copy2 {
+	width: 254px;
+	height: 140px;
+	top: 20px;
+	left: 18px;
+	background-position: -10px -105px;
+	opacity: 0;
+}
+
+#endframeTruckBG {
+	position: absolute;
+	top: 0px;
+	width: 300px;
+	height: 250px;
+	background: url(endFrameBGwithTruck.jpg) no-repeat;
+	opacity: 0;
+}
+
+#endCopy {
+ 	width: 192px;
+ 	height: 48px;
+ 	top: 32px;
+ 	left: 95px;
+ 	background-position: -10px -247px;
+ 	opacity: 0;
+ 	display: none;
+}
+
+#endTAWALogo {
+	width: 54px;
+	height:54px; 
+	top:187px;
+	left:7px;
+	background-position: -10px -305px;
+	opacity: 0;
+	display: none;
+}
+
+#cta {
+	width: 125px;
+	height: 30px;
+	top: 205px;
+	left:160px;
+	background-position: -120px -10px; 
+	overflow: hidden;
+	cursor: pointer;
+	opacity: 0;
+	display: none;
+}
+
+#buttonHover {
+	width: 60px;
+	height: 30px;
+	top: 0px;
+	left: -60px;
+	background-position: -10px -10px;
+	pointer-events: none;
+
+}
+
+#replayBtn{
+	width: 14px;
+	height: 16px;
+	top: 5px;
+	left: 275px;
+	cursor: pointer;
+	background-position: -258px -10;
+	opacity: 0; 
+	display: none;
+}
+
+#replayBtn:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: -webkit-transform .6s ease-in;
+  transition: transform .6s ease-in;
+}
+
+
+/* ----- logo ----- */
+.logo {
+  position:absolute;
+  background:url('logoSprite.png') 0px 0px no-repeat;
+  top:0px;
+  width:72px;
+  height:88px;
+  cursor: pointer;
+}
+
+#logo {
+	position: absolute;
+	left: 12px;	
+	display: none;
+}
+
+#logo1 {
+  background-position: -72px 0px;
+  opacity:0;
+  
+}
+#logo2 {
+  background-position: -144px 0px;
+  opacity:0;
+  
+}
+#logo3 {
+  background-position: -216px 0px;
+  opacity:0;
+  
+}
+
+#logo4 {
+  background-position: -288px 0px;
+  opacity:0;
+}
+

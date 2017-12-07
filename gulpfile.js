@@ -9,7 +9,7 @@ var htmlSrc = ['src/index.html'],
 	sassSrc = ['sass/main.scss'],
 	imageSrc = ['src/images/*.{png, jpg}']
 	fontsSrc = ['fonts/*.*'];
-	asssetSrc = ['banners'];
+	asssetSrc = ['banners/*'];
 
 
 gulp.task('sass', function(){

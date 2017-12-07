@@ -1,0 +1,159 @@
+body {
+	margin: 0;	
+	padding: 0;
+	font-family: "Times New Roman", serif;
+	font-size: 14px;
+	background-color: black;
+}
+
+#container {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	background-color: #000;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 25% auto;
+}
+
+#bg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(bg.jpg) no-repeat 0 0;
+	width: 300px;
+	height: 250px;
+
+}
+
+#bgClick{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 250px;
+	color: #FFF;
+	opacity: 0;
+
+}
+
+
+/*** headlines ***/
+#h1_1 {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: url(assets.png) no-repeat -7px -5px;
+	/*width: 225;*/
+	width: 0px;
+	height: 25px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+#h1_2 {
+	position: absolute;
+	top: 43px;
+	left: 9px;
+	background: url(assets.png) no-repeat -5px -36px;
+	/*width: 225;*/
+	width: 0px;
+	height: 25px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+#h1_3 {
+	position: absolute;
+	top: 74px;
+	left: 12px;
+	background: url(assets.png) no-repeat -7px -68px;
+	/*width: 225;*/
+	width: 0px;
+	height: 25px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+#h1_sub {
+	position: absolute;
+	top: 103px;
+	left: 12px;
+	background: url(assets.png) no-repeat -5px -100px;
+	/*width: 200px;*/	
+	width: 0px;
+	height: 20px;
+	opacity: 1;
+}
+
+#fyol {
+	position: absolute;
+	top: 251px;
+	left: 0px;
+	background: url(fyol.png) no-repeat 0px 0px;
+	width: 100px;
+	height: 41px;
+	opacity: 1;
+}
+
+#cta {
+	position: absolute;
+	top: 128px;
+	left: 12px;
+	background: url(assets.png) no-repeat -140px -125px;
+	width: 80px;
+	height: 22px;
+	opacity: 0;
+	display: none;
+	overflow: hidden;
+}
+
+#cta_hover{
+  position: absolute;
+  background-color: white;
+  width:20px;
+  height:70px;
+  top:0px;
+  left:0px;
+  opacity:1;
+  display: none;
+}
+
+/*** disclaimer parts ***/
+
+#discBtn{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: url(assets.png) no-repeat -105px -125px;
+	width: 35px;
+	height: 10px;
+	display: none;
+	opacity: 0;
+}
+
+#discPanel {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 300px;
+	height: 178px;
+	background-color: #000;
+	overflow: none;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+
+#discCopy {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background: url(disc_copy.png) no-repeat 0px 0px;
+	width: 300px;
+	height: 178px;
+	/*display: none;*/
+}
+

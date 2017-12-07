@@ -196,6 +196,71 @@ body{
 		font-family: $roboto;
 		font-weight: $normal-weight;
 		font-size: 14px;
+		padding-bottom: 20px;
+		padding-top: 10px;
+	}
+}
+
+#contact-form{
+	margin-top: 25px;
+
+	label {
+		font-family: $roboto;
+		font-weight: $normal-weight;
+    	color: $teal;
+	}
+
+	.form-control{
+		border: 1px solid $teal;
+	}	
+
+	.btn-success {
+		background-color: $teal;
+		border-color: $teal;
+	}
+
+	.btn-success:hover {
+		background-color: $green;
+		border-color: $green;
+	}
+
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    	color:    $sixtyBlack;
+    	font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   		color:    $sixtyBlack;
+   		opacity:  1;
+   		font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+   		color:    $sixtyBlack;
+   		opacity:  1;
+   		font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   		color:    $sixtyBlack;
+   		font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+	::-ms-input-placeholder { /* Microsoft Edge */
+   		color:    $sixtyBlack;
+   		font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+
+	::placeholder { /* Most modern browsers support this now. */
+   		color:    $sixtyBlack;
+   		font-family: $roboto;
+		font-weight: $normal-weight;
+	}
+
+	.text-muted{
+		margin-top:10px;
 	}
 }
 
@@ -227,4 +292,47 @@ body{
 		margin-top: 40px;
 	}
 
+}
+
+.ekko-lightbox-nav-overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .ekko-lightbox-nav-overlay a {
+    -ms-flex: 1;
+    flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s;
+    color: #fff;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.ekko-lightbox-nav-overlay a span {
+    padding: 0 30px;
+}
+
+.ekko-lightbox-nav-overlay a>* {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.ekko-lightbox a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.ekko-lightbox-nav-overlay a:last-child span {
+    text-align: right;
 }

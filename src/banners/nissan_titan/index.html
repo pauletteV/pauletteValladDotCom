@@ -1,0 +1,47 @@
+<DOCTYPE! HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Nissan Titan Award</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="TitanAward300x250.js"></script>
+		<link rel="stylesheet" href="TitanAward300x250.css" type="text/css">
+	</head>
+	
+	<body onload="initBanner();">
+		<div id= "container">
+			<div id="mainAnimation">
+				<div id="mainBG"></div>
+				<div id="truck">
+					<div id="truck1">
+						<div id="frontWheel"></div>
+						<div id="backWheel"></div>
+					</div>
+					<div id="truck2"></div>
+					<div id="truck3"></div>
+				</div><!-- end of "truck" -->
+				<div id="copy1" class="ImgSheet"></div>
+				<div id="copy2" class="ImgSheet"></div>	
+				<div id="bgClick"></div>			
+			</div><!-- end of "main animation" -->
+			<div id="endFrame">
+				<div id="endframeTruckBG"></div>
+				<div id="endCopy" class="ImgSheet"></div>
+				<div id="endTAWALogo" class="ImgSheet"></div>
+				<div id="endBgClick"></div>
+				<div id="logo" class="logo" onmouseover="lensFlare();">
+					<div id="f1_logo_animation">
+                    	<div id="logo1" class="logo"></div>
+                    	<div id="logo2" class="logo"></div>
+                    	<div id="logo3" class="logo"></div>
+                    	<div id="logo4" class="logo"></div>
+                	</div>
+                </div>
+				<div id="cta" class="ImgSheet" onmouseover = "ctaOver();" onmouseout ="ctaOut();">
+					<div id="buttonHover" class="ImgSheet"></div>
+				</div>
+				<div id="replayBtn" class="ImgSheet" onclick ="replayBanner();"></div>
+			</div><!-- end of "endframe" -->
+		</div>		
+	</body>	
+<html>

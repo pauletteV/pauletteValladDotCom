@@ -1,0 +1,72 @@
+body {
+	margin: 0;	
+	padding: 0;
+	background-color: black;
+}
+
+#mainContainer {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 250px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 25% auto;
+}
+
+#BgClickOut{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+}
+
+/* ====== banner assets ====== */
+
+#BG {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background: url(bg.jpg) no-repeat; 
+}
+
+
+#copy1 {
+	position: absolute;
+	top: 65px;
+	left: 15px;
+	width: 188px;
+	height: 36px;
+	background: url(copy1.png) no-repeat;
+}
+
+#copy2 {
+	position: absolute;
+	top: 66px;
+	left: 15px ;
+	width: 177px;
+	height: 41px;
+	background: url(copy2original.png) no-repeat;
+	display: none; 
+}
+
+#cta {
+	position: absolute;
+	top: 120px;
+	left: 170px;
+	width: 115px;
+	height: 37px;
+	background: url(cta.png) no-repeat;
+	/*-ms-transform: scale(.9,.9); 
+    -webkit-transform: scale(.9,.9); 
+    transform: scale(.9,.9); */	
+}
+
+#ctaOver {
+	position: absolute;
+	width: 115px;
+	height: 37px;
+	background: url(ctaOver.png) no-repeat;
+	opacity: 0;  
+}

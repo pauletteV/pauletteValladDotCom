@@ -1,0 +1,588 @@
+
+body {
+	margin:0px;
+	padding:0;
+	background-color: black;
+}
+#preload{
+	position:absolute;
+	left:2000px;
+}
+#container {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	background-color: #56b146;
+	border: 1px solid black;
+	overflow: hidden;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 25% auto;
+	/*display:none;*/
+}
+
+.unblur{
+	backface-visibility: hidden;
+	-webkit-filter: blur(0);
+}
+
+#frame1{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background-color: #56b146;
+	
+}
+
+#h1{
+	position: absolute;
+	background-image: url('h1.gif');
+	background-position: 0px 0px;
+	width: 231px;
+	height: 31px;
+    top: 112px;
+    left: 32px;
+	opacity:0;
+}
+
+#h1Over{
+	position: absolute;
+	background-image: url('h1Over.png');
+	background-position: 0px 0px;
+	width: 80px;
+	height: 40px;
+    top: 105px;
+    left: 185px;
+	opacity: 0;
+}
+
+#h1Glow{
+	position: absolute;
+	background-image: url('h1Glow.png');
+	background-position: 0px 0px;
+	width: 80px;
+	height: 40px;
+    top: 105px;
+    left: 185px;
+	display: none;
+	opacity: 0;	
+}
+
+#frame2{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top:0px;
+	left:0px;
+	
+}
+
+#h2container{
+	position: absolute;
+	width: 150px;
+	height: 90px;
+	top: 77px;
+    left: 15px;
+
+}
+
+#h2{
+	position: absolute;
+	background-image: url('h2.gif');
+	width: 150px;
+	height: 90px;
+	top: 0px;
+    left: 0px;
+	opacity:1;
+
+}
+
+#h2Android{
+	position: absolute;
+	background-image: url('h2android.png');
+	width: 96px;
+	height: 29px;
+	top: 63px;
+    left: 41px;
+	opacity:1;
+
+}
+
+#h2Glow{
+	position: absolute;
+	background-image: url('h2Glow.png');
+	background-position: 0px 0px;
+	width: 96px;
+	height: 29px;
+    top: 63px;
+    left: 41px;
+	display: none;
+	opacity: 1;
+}
+
+#phone1{
+	position: absolute;
+	background-image: url('phone.png');
+	background-position: 0px 0px;
+	width: 176px;
+	height: 239px;
+    top: 12px;
+    left: 125px;
+	opacity:1;
+}
+
+#disc1{
+	position: absolute;
+	background-image: url('disc1.gif');
+	background-position: 0px 0px;
+	width: 300px;
+	height: 18px;
+    /*top: 232px;*/
+    top: 251px;
+    left: 0px;
+	opacity:1;
+
+}
+#frame3_4{
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top:0px;
+	left:0px;
+	display: none;
+
+}
+#dotContainer {
+	position: absolute;
+	top: 145px;
+	left: 0px;
+	width: 260px;
+	height: 65px;
+	display: none;
+}
+
+.dot{
+	position: absolute;
+	width:6px;
+	height:6px;
+	display: block;
+}
+
+#dot1{
+	top:57px;
+	left:2px;
+	opacity:0;
+}
+
+#dot2{
+	top:50px;
+	left:8px;
+	opacity:0;
+}
+
+#dot3{
+	top:42px;
+	left:14px;
+	opacity:0;
+}
+
+#dot4{
+	top:35px;
+	left:22px;
+	opacity:0;
+}
+
+#dot5{
+	top:28px;
+	left:28px;
+	opacity:0;
+}
+
+#dot6{
+	top:22px;
+	left:34px;
+	opacity:0;
+}
+
+#dot7{
+	top:16px;
+	left:40px;
+	opacity:0;
+}
+
+#dot8{
+	top:11px;
+	left:48px;
+	opacity:0;
+}
+
+#dot9{
+	top:8px;
+	left:56px;
+	opacity:0;
+}
+
+#dot10{
+	top:7px;
+	left:64px;
+	opacity:0;
+}
+
+#dot11{
+	top:8px;
+	left:73px;
+	opacity:0;
+}
+
+#dot12{
+	top:10px;
+	left:81px;
+	opacity:0;
+}
+
+#dot13{
+	top:14px;
+	left:89px;
+	opacity:0;
+}
+
+#dot14{
+	top:18px;
+	left:98px;
+	opacity:0;
+}
+
+#dot15{
+	top:24px;
+	left:107px;
+	opacity:0;
+}
+	
+#dot16{
+	top:28px;
+	left:116px;
+	opacity:0;
+}
+
+#dot17{
+	top:35px;
+	left:125px;
+	opacity:0;
+}
+
+#dot18{
+	top:40px;
+	left:134px;
+	opacity:0;
+}
+
+#dot19{
+	top:45px;
+	left:144px;
+	opacity:0;
+}
+
+#dot20{
+	top:49px;
+	left:152px;
+	opacity:0;
+}
+
+#dot21{
+	top:51px;
+	left:161px;
+	opacity:0;
+}
+
+#dot22{
+	top:53px;
+	left:169px;
+	opacity:0;
+}
+
+#dot23{
+	top:54px;
+	left:177px;
+	opacity:0;
+}
+
+#dot24{
+	top:54px;
+	left:185px;
+	opacity:0;
+}
+
+#dot25{
+	top:52px;
+	left:193px;
+	opacity:0;
+}
+
+#dot26{
+	top:49px;
+	left:200px;
+	opacity:0;
+}
+
+#dot27{
+	top:46px;
+	left:207px;
+	opacity:0;
+}
+
+#dot28{
+	top:42px;
+	left:215px;
+	opacity:0;
+}
+
+#dot29{
+	top:38px;
+	left:222px;
+	opacity:0;
+}
+
+#dot30{
+	top:34px;
+	left:230px;
+	opacity:0;
+}
+
+#dot31{
+	top:31px;
+	left:237px;
+	opacity:0;
+}
+
+#dot32{
+	top:30px;
+	left:244px;
+	opacity:0;
+}
+
+
+#circleGlow{
+	position: absolute;
+	background: url('circle_glow.png') no-repeat 0px 0px;
+	width: 40px;
+	height: 40px;
+    top: 12px;
+    left: 238px;
+	opacity:0;
+}
+
+#h3container{
+	position: absolute;
+	width: 242px;
+	height: 50px;
+    top: 103px;
+    left: 31px;
+	opacity:1;
+
+}
+
+#h3{
+	position: absolute;
+	background: url('h3.gif') no-repeat;
+	width: 242px;
+	height: 50px;
+    top: 0px;
+    left: 0px;
+	opacity:1;
+
+}
+
+#h3Every{
+	position: absolute;
+	background: url('h3Every.png') no-repeat;
+	width: 203px;
+	height: 27px;
+    top: 24px;
+    left: 16px;
+	opacity:1;
+
+}
+
+#h3Glow{
+	position: absolute;
+	background-image: url('h3Glow.png');
+	background-position: 0px 0px;
+	width: 203px;
+	height: 27px;
+    top: 24px;
+    left: 16px;
+	display: none;
+	opacity: 1;
+}
+
+#h4{
+	position: absolute;
+	background: url('h4.gif') no-repeat;
+    width: 171px;
+    height: 50px;
+    top: 80px;
+    left: 13px;
+	opacity:1;
+	/*opacity:0;*/
+}
+	
+#phone2{
+	position: absolute;
+	background-image: url('phone.png');
+	background-position: 0px 0px;
+	width: 176px;
+	height: 239px;
+    top: 12px;
+    left: 125px;
+	opacity:0;
+}
+
+
+#endframe{
+	background-color: #56b146;
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	top:0px;
+	left:0px;
+	overflow: hidden;
+	display: none;
+}
+
+#t1Container{
+	position: absolute;
+	width: 154px;
+	height: 55px;
+	top: 90px; 
+	left: 22px; 
+	opacity: 1;
+}
+
+#t1{
+	position: absolute;
+	background: url(end.gif) no-repeat 0px 0px; 
+	width: 152px;
+	height: 55px;
+	top: 0px; 
+	left: 0px; 
+	opacity: 1;
+}
+
+
+#t1Android{
+	position: absolute;
+	background: url(endAndroid.png) no-repeat 0px 0px; 
+	width: 100px;
+	height: 22px;
+	top: 26px; 
+	left: 35px; 
+	opacity: 1;
+}
+
+#endGlow{
+	position: absolute;
+	background: url('endGlow.png') no-repeat 0px 0px; 
+	width: 100px;
+	height: 22px;
+    top: 26px;
+    left: 35px;
+	display: none;
+	opacity: 1;
+}
+
+
+#t2{
+	position: absolute;
+    background: url(endphone.png) no-repeat 0px 0px;
+    width: 148px;
+    height: 224px;
+    top: 9px; 
+    right: -8px; 
+    opacity: 1;
+}
+
+#t3{
+	position: absolute;
+	background: url(endBG.gif) no-repeat -1px -210px; 
+	width: 300px;
+	height: 40px;
+	top: 210px; /* change*/
+	left: 0px; 
+	opacity: 1;
+}
+
+#w1{
+	position: absolute;
+    background: url(endBG.gif) no-repeat -30px -40px;
+    width: 184px;
+    height: 32px;
+    top: 40px;
+    left: 30px;
+    opacity: 0;
+ 
+}
+
+#w2{ 
+	position: absolute;
+	background-color:#56b146;
+    width: 12px;
+    height: 16px;
+    top: 56px;
+    left: 141px;
+   
+}
+
+#w3{ 
+	position: absolute;
+	background-color:#56b146;
+    width: 12px;
+    height: 16px;
+    top: 40px;
+    left: 141px;
+    
+}
+
+#w4{ 
+	position: absolute;
+	background-color:#56b146;
+    width: 55px;
+    height: 37px;
+    top: 36px;
+    left: 154px;
+    
+}
+#w5{ 
+    position: absolute;
+    background: url(endBG.gif) no-repeat -205px -38px;
+    width: 55px;
+    height: 37px;
+    top: 36px;
+    left: 154px;
+}
+
+
+#button1{
+	position: absolute;
+	background: url('buttons.gif');
+    background-position: -5px -2px;
+    width: 130px;
+    height: 33px;
+    top: 151px;
+    left: 28px;
+	cursor:pointer;
+	opacity: 0;
+	display: none;
+}
+
+
+#button1:hover{
+    background-position: -135px -2px;
+}
+
+#clickarea {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background-color: rgba(0,0,0,0.001);
+	cursor: pointer;
+}

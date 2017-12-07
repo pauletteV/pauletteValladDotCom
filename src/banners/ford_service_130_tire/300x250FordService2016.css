@@ -1,0 +1,282 @@
+body {
+	margin: 0;	
+	padding: 0;
+	background-color: black;
+}
+
+#mainContainer {
+	position: relative;
+	width: 298px;
+	height: 248px;
+	border: 1px solid #000;
+	background-color: #000;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 25% auto;
+}
+
+
+/* ====== banner assets ====== */
+
+#bottomBar {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	height: 28px; 
+	background-color: #FFF;
+}
+
+
+#fordOval{
+	position: absolute;
+	top: 210px;
+	left: 222px;
+	width: 63px;
+	height: 32px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -10px;
+}
+
+
+/* ====== frame 1 ====== */
+
+#rockBG {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 300px;
+	height: 224px; 
+	background: url(rockBG.jpg) no-repeat;
+	display: block;
+}
+
+#specialistsLogo {
+	position: absolute;
+	top: 24px;
+	left: 126px;
+	width: 157px;
+	height: 88px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -50px;
+	opacity: 1;
+	display: none;
+}
+
+#lightWash {
+	position: absolute;
+	top: 24px;
+	left: 126px;
+	width: 1px;
+	height: 88px; 
+	background: url(lightWashClip2.png) no-repeat 0px 0px;
+	opacity: 0;
+	display: block;
+
+}
+
+/* ========  pillar copy ======== */
+
+#carBG {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 300px;
+	height: 224px; 
+	background: url(carBG.jpg) no-repeat;
+	display: none;
+	opacity: 1;
+}
+
+#titleBar{
+	position: absolute;
+	top: 95px;
+	left: 145px;
+	width: 4px;
+	height: 33px; 
+	background-color: #FFF;
+	opacity: 1;
+	display: none;
+}
+
+#fordTitle {
+	position: absolute;
+	top: 101px;
+	left: 60px;
+	width: 73px;
+	height: 20px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -150px;
+	opacity: 1;
+	display: none;
+}
+
+#parts {
+	position: absolute;
+	top: 101px;
+	left: 160px;
+	width: 80px;
+	height: 20px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -180px;
+	opacity: 1;
+	display: none; 
+	overflow: hidden;
+}
+
+#tools {
+	position: absolute;
+	top: 101px;
+	left: 158px;
+	width: 85px;
+	height: 20px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -210px;
+	opacity: 1;
+	display: none;
+	overflow: hidden;
+}
+
+#techs {
+	position: absolute;
+	top: 101px;
+	left: 158px;
+	width: 85px;
+	height: 20px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -240px;
+	opacity: 1;
+	display: none;
+	overflow: hidden;
+}
+
+/* ===== dj solo frame ======= */
+#djFrame {
+	display: none;
+}
+
+#djSolo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 165px;
+	height: 224px; 
+	background: url(dj_solo.png) no-repeat 0px 0px;
+	opacity: 1;
+	display: none;
+}
+
+#djSoloCopy {
+	position: absolute;
+	top: 73px;
+	left: 122px;
+	width: 162px;
+	height: 27px; 
+	background: url(dj_solo_copy.png) no-repeat 0px 0px;
+	opacity: 1;
+	display: none;
+}
+
+/* ============ end frame =================== */
+
+#endFrame {
+	display: none;
+}
+
+#offerCopy1 { /* "Buy Four..." */
+	position: absolute;
+	top: 16px;
+	left: 50px;
+	width: 202px;
+	height: 24px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -265px;
+	opacity: 1;
+	display: none;
+}
+
+#offerCopy2 { /* "get up to..." */
+	position: absolute;
+	top: 42px;
+	left: 116px;
+	width: 80px;
+	height: 23px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -75px -291px;
+	opacity: 1;
+	display: none;
+}
+
+/*#lineGrow {
+	position: absolute;
+	top: 25px;
+	left: 150px;
+	width: 1px;
+	height: 136px; 
+	background-color: #FFF;
+	opacity: 1;
+	display: none;
+}*/
+
+#offerDetails1{ /* "$130" */
+	position: absolute;
+	top: 64px;
+	left: 40px;
+	width: 96px;
+	height: 74px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -110px -191px;
+	opacity: 1;
+	display: none;	
+}
+
+#offerDetails2{ /* "in rebates by..." */
+	position: absolute;
+	top: 84px;
+	left: 142px;
+	width: 109px;
+	height: 50px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -110px -140px;
+	opacity: 1;
+	display: none;	
+}
+
+#tireLogos{ 
+	position: absolute;
+	top: 142px;
+	left: 52px;
+	width: 191px;
+	height: 25px; 
+	background: url(fordServiceQ12016130Tire300x250Sprite.png) no-repeat -10px -315px;
+	opacity: 1;
+	display: none;	
+}
+
+
+/* ======= click outs ======== */
+
+
+#bgClick {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 250px;
+}
+
+
+#cta {
+	position: absolute;
+	top: 181px;
+	left: 86px;
+	width: 127px;
+	height: 28px;
+	background: url(cta.png) no-repeat 0px 0px;
+	display: none;
+	opacity: 1; 
+
+}
+
+#ctaOver {
+	position: absolute;
+	width: 127px;
+	height: 28px;
+	background: url(ctaOver.png) no-repeat 0px 0px;
+	opacity: 0;  
+}
+
+.unblur{
+	backface-visibility: hidden;    
+	-webkit-filter: blur(0);
+}
