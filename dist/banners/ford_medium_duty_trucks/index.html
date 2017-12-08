@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Ford Medium Duty Trucks</title>
+    <link rel="stylesheet" href="MD_HTML5_300x600_600x600_YT.css">
+
+</head>
+
+<body>	
+
+	<div id="container-panel">
+
+		<div id="collapse-panel">
+			<div id="top_bar_collapse"></div>
+			<div id="logo_img_collapse"></div>
+			<div id="videoplaceholder">
+		   		<div id="playBtn"><a href="#"></a></div>
+				<video id="video1" poster="eightSecPosterImg.jpg" autoplay>
+			   		<source id="mp4source" type="video/mp4" src="md_445x250_8sec.mp4" />
+			   		<source type="video/ogg" src="video.ogg" />
+			   		<source type="video/webm" src="video.webm" />
+				</video>
+			</div>
+			<div id="bottom_image_collapse"></div>
+			<div id="cta_collapse" onmouseover="cta_hover();" onmouseout="cta_out();" onclick="ctaClick();"></div>
+		</div> <!-- end of collapse-panel -->
+
+		
+	     <div id="expand-panel">
+			<div id="top_bar_expand"></div>
+			<div id="logo_img_expand"></div>
+			<div id="video_holder">
+				<div id="menuholder">
+					<div id="menu_icons">
+						<div id="menu_icon1" onmouseover="rollOverIcon1();" onmouseout="rollOutIcon1();" onclick="clickIcon(1);"></div>
+						<div id="menu_icon2" onmouseover="rollOverIcon2();" onmouseout="rollOutIcon2();" onclick="clickIcon(2);"></div>
+						<div id="menu_icon3" onmouseover="rollOverIcon3();" onmouseout="rollOutIcon3();" onclick="clickIcon(3);"></div>
+						<div id="menu_icon4" onmouseover="rollOverIcon4();" onmouseout="rollOutIcon4();" onclick="clickIcon(4);"></div>
+					</div>
+					<div id="menu_rollover">		
+						<div id="menu_icon_over1"></div>
+						<div id="menu_icon_over2"></div>
+						<div id="menu_icon_over3"></div>
+						<div id="menu_icon_over4"></div>
+					</div>
+				</div><!-- end of menu holder -->
+				<div id="video-player"></div>
+				<div id="customPlay" onclick="playPauseToggle();" ></div>
+				<div id="customPause" onclick="playPauseToggle();" ></div>
+				<div id="customMute" onclick="audioToggle();" ></div>
+				<div id="customUnMute" onclick="audioToggle();"></div>
+				<div id="timeDisplay">0.0</div>				
+			</div> <!-- end of video holder -->
+			<div id="bottom_image_expand"></div>
+			<div id="cta_expand" onmouseover="cta_hover();" onmouseout="cta_out();" onclick="ctaClick();"></div>
+			<div id="expandCloseBtn"></div>	
+		</div> <!-- end of expand panel -->
+
+	</div> <!-- end of container-panel -->
+
+
+
+    <!-- Enabler should always come first. -->
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+    <!-- Polymer should come before custom elements, like the close button. -->
+    <script src="https://www.gstatic.com/external_hosted/polymer/custom.elements.min.js"></script>
+
+    <!-- YouTube close button -->
+    <script src="https://www.gstatic.com/ads/ci/ytclosebutton/1/ytclosebutton_min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="HTML5_MH_Expanding_300x600_YTVideo.js"></script> 
+
+
+</body>
+
+</html>

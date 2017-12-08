@@ -1,0 +1,179 @@
+
+body {
+	margin:0px;
+	padding:0;
+	background-color: black;
+}
+#preload{
+	position:absolute;
+	left:2000px;
+}
+#container {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	background-color: black;
+	border: 1px solid black;
+	overflow: hidden;
+	box-sizing: border-box;
+	cursor: pointer;
+	/*display:none;*/
+	margin: 25% auto;
+}
+.unblur{
+	backface-visibility: hidden;
+	-webkit-filter: blur(0);
+}
+
+.ImgSheet {
+	position: absolute;
+	background: url(assets.png) no-repeat 0px 0px;
+}
+
+#tube{
+	position: absolute;
+	background: url('tube.jpg') no-repeat 0px 0px;
+	width:257px;
+	height: 1081px;
+	top: -270px;
+	left: 20px;
+	display: block;
+	opacity: 1;
+}
+
+#h1 {
+	background-position: -5px -5px;
+	width:140px;
+	height: 185px;
+	top: 45px;
+	left: 110px;
+	display: none;
+	opacity: 0;
+	-ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari */
+    transform: scale(2);
+}
+
+#h2 {
+	background-position: -5px -195px;
+	width:145px;
+	height: 151px;
+	top: 71px;
+	left: 110px;
+	display: none;
+	opacity: 0;
+	-ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari */
+    transform: scale(2);
+}
+#materials{
+	position: absolute;
+	width: 300px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+#edge{
+	position: absolute;
+	background: url('edge.png') no-repeat 0px 0px;
+	width: 0px;
+	height: 28px;
+	top: 96px;
+	left: 27px;
+	display: none;
+	opacity: 1;
+}
+
+#concrete{
+	position: absolute;
+	background: url('concrete.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#granite{
+	position: absolute;
+	background: url('granite.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#glass{
+	position: absolute;
+	background: url('glass.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#pvc{
+	position: absolute;
+	background: url('pvc.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#aluminum{
+	position: absolute;
+	background: url('aluminum.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#cover{
+	position: absolute;
+	background: url('cover.jpg') no-repeat 0px 0px;
+	width: 0px;
+	height: 110px;
+	top: 0px;
+	left: 0px;
+	display: none;
+	opacity: 1;
+}
+
+#button1{
+	position: absolute;
+    background: url('cta.png') no-repeat 0px 0px;
+    width: 203px;
+    height: 26px;
+    top: 0px;
+    left: 301px;
+	cursor:pointer;
+	opacity: 1;
+	display: none;
+	
+}
+
+#button1:hover{
+   background: url('cta.png') no-repeat 0px -30px;
+    
+}
+
+#clickarea {
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background-color: rgba(0,0,0,0.001);
+	cursor: pointer;
+}

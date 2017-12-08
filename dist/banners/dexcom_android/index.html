@@ -1,0 +1,162 @@
+<DOCTYPE! HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Dexcom Android Banner</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+<body onload="initBanner();">
+	<div id="container">
+		<div id="preload">
+			
+		</div>
+		<div id="animation">
+			<div id="frame3_4">
+					<div id="h3container">
+						<div id="h3" class="unblur"></div>
+						<div id="h3Every" class="unblur"></div>
+						<div id="h3Glow"></div>
+					</div>
+				<div id="h4" class="unblur"></div>
+				<div id="h4Glow"></div>
+				<div id="phone2"></div>
+				<!--  svg dots -->
+				<div id="dotContainer">
+					<div id="dot1" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot2" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot3" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot4" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot5" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot6" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot7" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot8" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot9" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot10" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot11" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot12" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot13" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot14" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot15" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot16" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot17" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot18" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot19" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot20" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot21" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot22" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot23" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot24" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot25" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot26" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot27" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot28" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot29" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot30" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot31" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="dot32" class="dot">	
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.15 4.08"><defs><style>.a{fill:#fff;}</style></defs><title>dot</title><path class="a" d="M0,2.44A2,2,0,0,1,1.71.05,1.88,1.88,0,0,1,4.06,1.52,1.88,1.88,0,0,1,2.54,4C1.25,4.33.47,3.65,0,2.44"/></svg>
+					</div>
+					<div id="circleGlow"></div>
+				</div>
+			</div>
+			<div id="frame2">
+				<div id="h2container">
+					<div id="h2" class="unblur"></div>
+					<div id="h2Android" class="unblur"></div>
+					<div id="h2Glow" class="unblur"></div>
+				</div>
+				<div id="disc1"></div>
+				<div id="phone1"></div>
+			</div>
+			<div id="frame1">
+				<div id="h1"></div>
+				<div id="h1Over" class="unblur"></div>
+				<div id="h1Glow" class="unblur"></div>
+			</div>
+			
+			<div id="endframe">
+				<div id=t1Container>
+					<div id="t1"></div>
+					<div id=t1Android></div>
+					<div id="endGlow"></div>
+				</div>
+				<div id="t3"></div>
+				<div id="t2"></div>
+			
+				<div id="w1"></div>
+				<div id="w2"></div>
+				<div id="w3"></div>
+				<div id="w4"></div>
+				<div id="w5"></div>
+			</div>
+		</div>
+		<div id="clickarea"></div>
+		<div id="button1"></div>		
+	</div>
+	<script src="logic.js"></script>	
+</body>	
+<html>

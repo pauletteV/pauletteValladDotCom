@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	processSass = require('gulp-sass'),
 	processhtmlHtml = require('gulp-processhtml'),
-	processhtmlImgs = require('gulp-image-optimization');
+	//processhtmlImgs = require('gulp-image-optimization');
 	gutil = require('gulp-util');
 
 //file sources
@@ -9,7 +9,7 @@ var htmlSrc = ['src/index.html'],
 	sassSrc = ['sass/main.scss'],
 	imageSrc = ['src/images/*.{png, jpg}']
 	fontsSrc = ['fonts/*.*'];
-	asssetSrc = ['banners/*'];
+	asssetSrc = ['banners/'];
 
 
 gulp.task('sass', function(){
@@ -26,12 +26,12 @@ gulp.task('html', function(){
 
 });
 
-gulp.task('images', function(){
+/*gulp.task('images', function(){
 	return gulp.src(imageSrc)
 	.pipe(processhtmlImgs())
 	.pipe(gulp.dest('dist/images'));
 
-});
+});*/
 
 gulp.task('copySass', function(){
 	return gulp.src('src/css/main.css')
@@ -55,6 +55,7 @@ gulp.task('watch', function(){
 	gulp.watch(sassSrc, ['sass']);
 });
 
-gulp.task('build', ['sass', 'html', 'images', 'copySass', 'copyFonts', 'copyAssets']);
+//gulp.task('build', ['sass', 'html', 'images', 'copySass', 'copyFonts', 'copyAssets']);
+gulp.task('build', ['sass', 'html', 'copySass', 'copyFonts', 'copyAssets']);
 
 //gulp.task('default', [ 'sass', 'html', 'images']);
