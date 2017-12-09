@@ -86,6 +86,10 @@ body {
   border-bottom: 1px solid #8BB42D;
   margin-top: 20px; }
 
+.top-link-row {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 .top-link {
   color: #1E796A; }
   .top-link a {

@@ -110,6 +110,7 @@ body{
 .section-title {
 	border-bottom: 2px solid $teal;	
 
+
 	h2 {
 		font-family: $roboto;
 		font-weight: $normal-weight;
@@ -123,6 +124,11 @@ body{
 .divider-border{
 	border-bottom: 1px solid $green;
 	margin-top: 20px;
+}
+
+.top-link-row{
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .top-link{
