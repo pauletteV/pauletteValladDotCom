@@ -280,10 +280,10 @@
     if (this.isIncomplete() || this.hasErrors()) e.preventDefault()
   }
 
-  /*Validator.prototype.toggleSubmit = function () {
+  Validator.prototype.toggleSubmit = function () {
     if (!this.options.disable) return
     this.$btn.toggleClass('disabled', this.isIncomplete() || this.hasErrors())
-  }*/
+  }
 
   Validator.prototype.defer = function ($el, callback) {
     callback = $.proxy(callback, this, $el)

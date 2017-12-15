@@ -179,6 +179,8 @@ body{
 .project-details{
 	background-color: $teal;
 	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
 	color: $white;
 
 	h4{
@@ -205,6 +207,10 @@ body{
 		padding-bottom: 20px;
 		padding-top: 10px;
 	}
+}
+
+#srg-para{
+	padding-bottom: 60px;
 }
 
 #contact-form{

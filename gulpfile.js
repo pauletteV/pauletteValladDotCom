@@ -9,7 +9,7 @@ var htmlSrc = ['src/index.html'],
 	sassSrc = ['sass/main.scss'],
 	imageSrc = ['src/images/*.{png, jpg}']
 	fontsSrc = ['fonts/*.*'];
-	asssetSrc = ['banners/'];
+	asssetSrc = ['banners/*'];
 
 
 gulp.task('sass', function(){
@@ -28,7 +28,7 @@ gulp.task('html', function(){
 
 /*gulp.task('images', function(){
 	return gulp.src(imageSrc)
-	.pipe(processhtmlImgs())
+	.pipe(processhtmlImgs())s
 	.pipe(gulp.dest('dist/images'));
 
 });*/
